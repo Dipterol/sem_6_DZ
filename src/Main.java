@@ -42,7 +42,8 @@ public class Main {
         notebooks.add(new NoteBook("Asus", 32, 2000, "Windows", "Black"));
         notebooks.add(new NoteBook("Huawei", 16, 512, "Windows", "Silver"));
 
-        System.out.println("Введите цифру, соответствующую необходимому критерию:");
+        System.out.println("Добро пожаловать в магазин электроники!");
+        System.out.println("Для подбора ноутбука введите цифру, соответствующую необходимому критерию:");
         System.out.println("1 - ОЗУ (8, 16, 32 ГБ)");
         System.out.println("2 - Объем ЖД (256, 512, 1000 ГБ)");
         System.out.println("3 - Операционная система (Windows, macOS, Linux)");
@@ -55,7 +56,7 @@ public class Main {
         String filterValue = scanner.next();
 
         Set<NoteBook> filteredNoteBooks = filterLaptops(notebooks, filterCriteria, filterValue);
-        System.out.println("Результаты фильтрации:");
+        System.out.println("Для вас подходят данные модели:");
         for (NoteBook notebook : filteredNoteBooks) {
             System.out.println(notebook);
         }
